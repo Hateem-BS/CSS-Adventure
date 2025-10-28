@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations</title>
+  </head>
+  <body>
+    <h1>CSS Animations Example</h1>
+    <div class="animated-box">Watch me animate!</div>
+
+    <style>
+      .animated-box {
+        width: 100px;
+        height: 100px;
+        background-color: coral;
+        margin: 50px auto;
+        animation: moveAndColor 4s infinite alternate;
+      }
+
+      @keyframes moveAndColor {
+        0% {
+          transform: translateY(0);
+          background-color: coral;
+        }
+        50% {
+          transform: translateY(-100px);
+          background-color: lightblue;
+        }
+        100% {
+          transform: translateY(0);
+          background-color: coral;
+        }
+      }
+    </style>
+  </body>
+</html>
