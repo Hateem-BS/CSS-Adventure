@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tranformation & Animations also Animations</title>
+  </head>
+  <body>
+    <h1>Tranformation in CSS</h1>
+    <p>
+      CSS transformations allow you to modify the appearance and position of
+      elements on a web page. You can apply various transformation functions
+      such as translate, rotate, scale, and skew to create dynamic and visually
+      appealing effects.
+    </p>
+    <h2>Transformation Example</h2>
+    <div
+      style="
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        transform: rotate(20deg) translateX(50px);
+      "
+    >
+      This box is transformed.
+    </div>
+    <h1>CSS Transitions</h1>
+    <p>
+      CSS transitions allow you to create smooth animations when changing CSS
+      properties. By specifying the duration and easing function, you can
+      control how the transition occurs.
+    </p>
+    <h2>Transition Example</h2>
+    <div
+      style="
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+        transition: background-color 0.5s ease;
+      "
+      onmouseover="this.style.backgroundColor='lightgreen';"
+      onmouseout="this.style.backgroundColor='lightcoral';"
+    >
+      Hover over me!
+    </div>
+    <h1>CSS Animations</h1>
+    <p>
+      CSS animations allow you to create complex animations by defining
+      keyframes that specify the styles at various points during the animation
+      sequence.
+    </p>
+    <h2>Animation Example</h2>
+    <style>
+      @keyframes exampleAnimation {
+        0% {
+          background-color: lightpink;
+          transform: translateY(0);
+        }
+        50% {
+          background-color: lightseagreen;
+          transform: translateY(-20px);
+        }
+        100% {
+          background-color: lightpink;
+          transform: translateY(0);
+        }
+      }
+      .animated-box {
+        width: 100px;
+        height: 100px;
+        background-color: lightpink;
+        animation: exampleAnimation 2s infinite;
+      }
+    </style>
+    <div class="animated-box">This box is animated.</div>
+  </body>
+</html>
